@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تطبيقاتي</title>
 
+   <!-- favicon -->
+   <link rel="icon" href="imgs/favicon.png">
+
+   <!-- description of website -->
+   <meta name="description" content="This is a description of my website. It gives an overview of the content and purpose of the site.">
+
   <!-- Css main file   -->
   <link rel="stylesheet" href="css/index.css" />
 
@@ -39,6 +45,7 @@
       <h3 class="nav-title-lg">تطبيقاتي</h3>
       <div class="nav-links-container-lg">
         <ul>
+          <li class="nav-link"><a href="#header">الرئيسية</a></li>
           <li class="nav-link"><a href="#about">عن الشركة</a></li>
           <li class="nav-link"><a href="#features"> الميزات</a></li>
           <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
@@ -87,6 +94,7 @@
       <!-- <div class="container"> -->
       <div class="nav-links-responsive">
         <ul>
+          <li class="nav-link"><a href="#header">الرئيسية</a></li>
           <li class="nav-link"><a href="#about">عن الشركة</a></li>
           <li class="nav-link"><a href="#features"> الميزات</a></li>
           <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
@@ -102,7 +110,7 @@
   <!-- start main -->
   <main>
     <!-- start header -->
-    <header>
+    <header id="header">
       <div class="overlay">
         <div class="header-content">
           <p>مرحبا</p>
@@ -420,41 +428,29 @@
 
               <div class="form-txt">
                 <h4>عنوان</h4>
-                <p class="address">22 الدور الرابع قسيمة رقم ,
-                  145 طريق مورفي كانيون
-                  2028 سان دييغو كاليفورنيا</p>
+                <p class="address">بغداد | زيونة | شارع الربيعي</p>
                 <div class="form-social">
                   <p><i class="fa-brands fa-whatsapp"></i> 7708111466 </p>
                   <p><i class="fa-solid fa-phone"></i> 7708111466 </p>
                   <p> <i class="fa-regular fa-envelope"></i> info@qriq.me</p>
                 </div>
-                <h5>اتبعني</h5>
-
-                <div class="nav-social nav-social-lg form-icons">
-                  <a href="mailto:info@qriq.me" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                  </a>
-                  <a href="https://wa.me/+9647708111466" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-                  <a href="tel:+9647708111466" target="_blank">
-                    <i class="fa-solid fa-phone"></i>
-                  </a>
-                </div>
 
 
               </div>
-              <form action="">
+              <form action="" id="contact">
                 <div class="form-nm-mail">
 
-                  <input type="text" placeholder="اسم" id="name">
-                  <input type="email" id="email" placeholder="بريد الكتروني">
+                  <input type="text" placeholder="اسم" id="name" required>
+                  <input type="email" id="email" placeholder="بريد الكتروني" required>
                 </div>
                 <div class="text-area">
 
-                  <textarea name="" id="msg" placeholder="اخبرنا المزيد عن احتياجاتك...." cols="68" rows="10"></textarea>
+                  <textarea name="" id="message" placeholder="اخبرنا المزيد عن احتياجاتك...." cols="68" rows="10" required></textarea>
                 </div>
-                <button type="submit" class="form-btn" onclick="SendMail()">ارسل رسالة</button>
+                <div class="btn-div">
+
+                  <button type="submit" class="form-btn" onclick="SendMail()">ارسل رسالة</button>
+                </div>
               </form>
             </div>
           </div>
