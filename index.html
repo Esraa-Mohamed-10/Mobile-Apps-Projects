@@ -1,249 +1,396 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تطبيقات</title>
 
-    <!-- Css main file -->
-    <link rel="stylesheet" href="css/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تطبيقاتي</title>
 
-    <!-- font icon files -->
-    <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Css main file -->
+  <link rel="stylesheet" href="css/index.css" />
 
-     <!--the Intersection Observer Polyfill -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.12.0/intersection-observer.min.js"></script>
-  </head>
+  <!-- font icon files -->
+  <link rel="stylesheet" href="css/all.min.css" />
 
-  <body>
-    <!-- start navbar -->
-    <nav>
-      <!-- nav on large screens -->
-      <div class="nav-on-large-screens">
-        <div class="nav-img">
-          <img src="imgs/profile.jpg" alt="لوجو" class="logo" />
-        </div>
-        <h3 class="nav-title-lg">تطبيقاتي</h3>
-        <div class="nav-links-container-lg">
-          <ul>
-            <li class="nav-link"><a href="#about">عن الشركة</a></li>
-            <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
-            <li class="nav-link"><a href="#gallery">المعرض</a></li>
-            <li class="nav-link"><a href="#contact">تواصل معنا</a></li>
-          </ul>
-        </div>
-        <div class="nav-social nav-social-lg">
-          <a href="mailto:info@qriq.me" target="_blank">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-          <a href="https://wa.me/07708111466" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="tel:07708111466" target="_blank">
-            <i class="fa-solid fa-phone"></i>
-          </a>
+  <!--the Intersection Observer Polyfill -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.12.0/intersection-observer.min.js"></script>
+</head>
+
+<body>
+  <!-- start navbar -->
+  <nav>
+    <!-- nav on large screens -->
+    <div class="nav-on-large-screens">
+      <div class="nav-img">
+        <img src="imgs/profile.jpg" alt="لوجو" class="logo" />
+      </div>
+      <h3 class="nav-title-lg">تطبيقاتي</h3>
+      <div class="nav-links-container-lg">
+        <ul>
+          <li class="nav-link"><a href="#about">عن الشركة</a></li>
+          <li class="nav-link"><a href="#features"> الميزات</a></li>
+          <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
+          <li class="nav-link"><a href="#gallery">واجهات تطبيقاتي</a></li>
+          <li class="nav-link"><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="nav-social nav-social-lg">
+        <a href="mailto:info@qriq.me" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/+9647708111466" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+9647708111466" target="_blank">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- nav on medium and small screens -->
+    <div class="responsive-nav">
+      <div class="container">
+        <h3 class="nav-title">تطبيقاتي</h3>
+        <!-- div contains btn and social -->
+        <div class="btn_social_container">
+          <div class="nav-social">
+            <a href="mailto:info@qriq.me">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/+9647708111466">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:+9647708111466">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+
+          <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+          <button id="close-menu"><i class="fa-solid fa-x"></i></button>
         </div>
       </div>
+    </div>
+    <!-- menu on responsive -->
+    <div id="drop-menu">
+      <!-- <div class="container"> -->
+      <div class="nav-links-responsive">
+        <ul>
+          <li class="nav-link"><a href="#about">عن الشركة</a></li>
+          <li class="nav-link"><a href="#features"> الميزات</a></li>
+          <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
+          <li class="nav-link"><a href="#gallery">واجهات تطبيقاتي</a></li>
+          <li class="nav-link"><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </div>
+  </nav>
+  <!-- end navbar -->
 
-      <!-- nav on medium and small screens -->
-      <div class="responsive-nav">
-        <div class="container">
-          <h3 class="nav-title">تطبيقاتي</h3>
-          <!-- div contains btn and social -->
-          <div class="btn_social_container">
-            <div class="nav-social">
-              <a href="mailto:info@qriq.me">
-                <i class="fa-regular fa-envelope"></i>
-              </a>
-              <a href="https://wa.me/07708111466">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="tel:07708111466">
-                <i class="fa-solid fa-phone"></i>
-              </a>
+  <!-- start main -->
+  <main>
+    <!-- start header -->
+    <header>
+      <div class="overlay">
+        <div class="header-content">
+          <p>مرحبا</p>
+          <h1>تطبيقاتي</h1>
+          <p>ما تقدمه الشركة</p>
+          <button>تواصل معنا</button>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start about -->
+    <section id="about">
+      <div class="container">
+        <!-- start about component -->
+        <div>
+          <div class="special-heading">عني</div>
+          <p>تعرف علي أكثر</p>
+        </div>
+        <!-- end about component -->
+        <div class="about-grid">
+          <div class="about-intro">
+            <h2>
+              انا <span class="about-name">سيمون اوليفيا</span> مطور ويب
+            </h2>
+            <p>
+              أساعدك في بناء علامة تجارية لعملك بسعر مناسب. حقق الآلاف من
+              العملاء نتائج استثنائية أثناء العمل مع فريقنا المتفاني. عندما
+              أخذت طابعة غير معروفة لوحًا من النوع وتدافعت عليه لعمل كتاب عينة
+              من النوع
+            </p>
+            <p>
+              تسليم العمل في الوقت المحدد والميزانية التي تلبي متطلبات العميل
+              هو شعارنا. كان النص الوهمي القياسي في الصناعة على الإطلاق عندما
+              أخذت طابعة غير معروفة لوحًا
+            </p>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-container">
+
+              <div class="progress-bar" data-progress="90">JS , Dart</div>
+              <div class="progress-bar" data-progress="80">Flutter</div>
+              <div class="progress-bar" data-progress="85">React Native</div>
+              <div class="progress-bar" data-progress="95">UI UX</div>
             </div>
-
-            <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
-            <button id="close-menu"><i class="fa-solid fa-x"></i></button>
           </div>
         </div>
       </div>
-      <!-- menu on responsive -->
-      <div id="drop-menu">
-        <!-- <div class="container"> -->
-        <div class="nav-links-responsive">
-          <ul>
-            <li class="nav-link"><a href="#about">عن الشركة</a></li>
-            <li class="nav-link"><a href="#clients">اهم عملائنا</a></li>
-            <li class="nav-link"><a href="#gallery">المعرض</a></li>
-            <li class="nav-link"><a href="#contact">تواصل معنا</a></li>
-          </ul>
-        </div>
-        <!-- </div> -->
-      </div>
-    </nav>
-    <!-- end navbar -->
+      <section>
+        <!-- end about -->
 
-    <!-- start main -->
-    <main>
-      <!-- start header -->
-      <header>
-        <div class="overlay">
-          <div class="header-content">
-            <p>مرحبا</p>
-            <h1>تطبيقاتي</h1>
-            <p>ما تقدمه الشركة</p>
-            <button>تواصل معنا</button>
-          </div>
-        </div>
-      </header>
-      <!-- end header -->
-
-        
-        <!-- start about -->
-        <section id="about">
+        <!-- start features -->
+        <section id="features">
           <div class="container">
-            <!-- start about component -->
+            <!-- start features component -->
             <div>
-              <div class="special-heading">عني</div>
-              <p>تعرف علي أكثر</p>
+              <div class="special-heading">الميزات</div>
+              <p>مميزات تطبيقاتي</p>
             </div>
-            <!-- end about component -->
-             <div class="about-grid">
-               <div class="about-intro">
-                 <h2>
-                   انا <span class="about-name">سيمون اوليفيا</span> مطور تطبيقات هواتف
-                 </h2>
-                 <p>
-                   أساعدك في بناء علامة تجارية لعملك بسعر مناسب. حقق الآلاف من
-                   العملاء نتائج استثنائية أثناء العمل مع فريقنا المتفاني. عندما
-                   أخذت طابعة غير معروفة لوحًا من النوع وتدافعت عليه لعمل كتاب عينة
-                   من النوع
-                 </p>
-                 <p>
-                   تسليم العمل في الوقت المحدد والميزانية التي تلبي متطلبات العميل
-                   هو شعارنا. كان النص الوهمي القياسي في الصناعة على الإطلاق عندما
-                   أخذت طابعة غير معروفة لوحًا
-                 </p>
-               </div>
+            <!-- end features component -->
 
-               <div class="progress-section">
-                <div class="progress-container"> 
-                       
-                  <div class="progress-bar" data-progress="90">JS , Dart</div>                 
-                  <div class="progress-bar" data-progress="80">Flutter</div>                  
-                  <div class="progress-bar" data-progress="85">React Native</div>                  
-                  <div class="progress-bar" data-progress="95">UI UX</div>
+            <!-- start grid-features -->
+            <div class="grid-features">
+              <!-- first card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-user-tag"></i>
+                </div>
+                <h5 class="f-card-title">حجز نك نيم مخصص</h5>
+                <p class="f-card-text">
+                  حجز نك نيم مخصص حسب الرغبة من ضمن الرابط الرئيسي
+                </p>
+              </div>
+
+              <!-- second card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <h5 class="f-card-title">QRCode</h5>
+                <p class="f-card-text">رابط واحد مخصص + QRCode لجميع المنصات</p>
+              </div>
+
+              <!-- third card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h5 class="f-card-title">التحكم بجميع التطبيقات</h5>
+                <p class="f-card-text">إمكانية التحكم الكامل بجميع التطبيقات.</p>
+              </div>
+
+              <!-- fourth card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h5 class="f-card-title">تعديل الستايل والايقونات</h5>
+                <p class="f-card-text">إمكانية تعديل الستايل والايقونات بحرية.</p>
+              </div>
+
+              <!-- fifth card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h5 class="f-card-title">إحصائيات الزوار والنقرات</h5>
+                <p class="f-card-text">إحصائيات للعدد زوار ونقرات المنصات</p>
+              </div>
+
+              <!-- sixth card -->
+              <div class="features-card">
+                <div class="f-card-icon">
+                  <i class="fas fa-store"></i>
+                </div>
+                <h5 class="f-card-title">متجر الكتروني أو معرض صور</h5>
+                <p class="f-card-text">إضافة مخصصة لمتجر الكتروني او معرض صور</p>
+              </div>
+            </div>
+            <!-- end grid-features -->
+
+            <!-- start pricing -->
+            <div class="price-grid">
+
+            <div class="price-card">
+              <h5 class="price">9 <span>$</span></h5>
+              <p class="year">شهريا</p>
+            </div>
+
+            <div class="price-card">
+              <h5 class="price">90 <span>$</span></h5>
+              <p class="year">سنويا</p>
+            </div>
+           </div>
+
+          </div>
+        </section>
+        <!-- end features -->
+
+        <!-- start gallery -->
+        <section id="gallery">
+          <div class="container">
+            <!-- start gallery component -->
+            <div>
+              <div class="special-heading">اعمالي</div>
+              <p>واجهات تطبيقاتي</p>
+            </div>
+            <!-- end gallery component -->
+            <div class="gallery-grid">
+              <div class="gallery-img gallery-col">
+                <div>
+                  <img src="./imgs/project-1.jpg" alt="">
+                  <div class="img-overlay">Project1</div>
+                </div>
+                <img src="./imgs/project-3.jpg" alt="">
+              </div>
+              <div class="gallery-img gallery-middle"><img src="./imgs/project-2.jpg" alt=""></div>
+
+              <div class="gallery-img  gallery-col-below">
+                <img src="./imgs/project-1.jpg" alt="">
+                <img src="./imgs/project-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end gallery -->
+
+
+        <!-- start clients -->
+        <section id="clients">
+          <div class="container">
+            <!-- start testimonals component -->
+            <div>
+              <div class="special-heading">عملائنا</div>
+              <p>اراء عملائنا</p>
+            </div>
+            <!-- end testimonals component -->
+
+            <div class="test-parent">
+              <!-- 1 -->
+              <div class="test-card">
+                
+                  <div class="client-logo">
+                    <img src="imgs/438145760_859696172869004_3805295181285288631_n.jpg" alt="" />
+                  </div>
+                  <p>شركة طريق الافق</p>
+               
+                <div class="desc_rates">
+                  <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
                 </div>
               </div>
-             </div>
-            </div>
-              <section>
-          <!-- end about -->
 
-      <!-- start features -->
-      <section id="features">
-        <div class="container">
-          <!-- start features component -->
-          <div>
-            <div class="special-heading">الميزات</div>
-            <p>مميزات تطبيقاتي</p>
-          </div>
-          <!-- end features component -->
-
-          <!-- start grid-features -->
-          <div class="grid-features">
-            <!-- first card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-user-tag"></i>
+              <!-- 2 -->
+              <div class="test-card">
+                
+                  <div class="client-logo">
+                    <img src="imgs/client2.jpg" alt="" />
+                  </div>
+                  <p>لوكس بيوتي للتجميل </p>
+                
+                <div class="desc_rates">
+                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
+                </div>
               </div>
-              <h5 class="f-card-title">حجز نك نيم مخصص</h5>
-              <p class="f-card-text">
-                حجز نك نيم مخصص حسب الرغبة من ضمن الرابط الرئيسي
-              </p>
-            </div>
 
-            <!-- second card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-link"></i>
+              <!-- 3 -->
+              <div class="test-card">
+                
+                  <div class="client-logo">
+                    <img src="imgs/client3.jpg" alt="" />
+                  </div>
+                  <p>قرطاسية الحسام</p>
+               
+                <div class="desc_rates">
+                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
+                </div>
               </div>
-              <h5 class="f-card-title">QRCode</h5>
-              <p class="f-card-text">رابط واحد مخصص + QRCode لجميع المنصات</p>
-            </div>
 
-            <!-- third card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-cogs"></i>
+              <!-- 4 -->
+              <div class="test-card">
+                
+                  <div class="client-logo">
+                    <img src="imgs/client4.jpg" alt="" />
+                  </div>
+                  <p>عيادة الضاحية للتجميل والليزر</p>
+                
+                <div class="desc_rates">
+                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
+                </div>
               </div>
-              <h5 class="f-card-title">التحكم بجميع التطبيقات</h5>
-              <p class="f-card-text">إمكانية التحكم الكامل بجميع التطبيقات.</p>
-            </div>
 
-            <!-- fourth card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-paint-brush"></i>
+              <!-- 5 -->
+              <div class="test-card">
+                
+                  <div class="client-logo">
+                    <img src="imgs/client55.jpg" alt="" />
+                  </div>
+                  <p>عالية للمؤكولات الشامية</p>
+                
+                <div class="desc_rates">
+                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
+                </div>
               </div>
-              <h5 class="f-card-title">تعديل الستايل والايقونات</h5>
-              <p class="f-card-text">إمكانية تعديل الستايل والايقونات بحرية.</p>
-            </div>
 
-            <!-- fifth card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-chart-line"></i>
+              <!-- 6 -->
+              <div class="test-card">
+              
+                  <div class="client-logo">
+                    <img src="imgs/client6.jpg" alt="" />
+                  </div>
+                  <p>الشروق للدعاية والاعلان </p>
+              
+                <div class="desc_rates">
+                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <p class="desc">
+                    من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
+                  </p>
+                </div>
               </div>
-              <h5 class="f-card-title">إحصائيات الزوار والنقرات</h5>
-              <p class="f-card-text">إحصائيات للعدد زوار ونقرات المنصات</p>
+
             </div>
+            </section>
+            <!-- end clients -->
 
-            <!-- sixth card -->
-            <div class="features-card">
-              <div class="f-card-icon">
-                <i class="fas fa-store"></i>
-              </div>
-              <h5 class="f-card-title">متجر الكتروني أو معرض صور</h5>
-              <p class="f-card-text">إضافة مخصصة لمتجر الكتروني او معرض صور</p>
-            </div>
-          </div>
-          <!-- end grid-features -->
+            <!-- start contact -->
+            <!-- <form action="">
+        <input type="text" placeholder="name" id="username">
+        <input type="email" placeholder="email" id="useremail">
+        <input type="tel" placeholder="phone" id="userphone">
+        <textarea name="" id="usermsg"></textarea>
+        <button type="submit">send</button>
+       </form> -->
+            <!-- end contact -->
+  </main>
+  <!-- start fixed btn -->
+  <a id="fixed-btn" href="#">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+  <!-- end fixed btn -->
 
-          <!-- start pricing -->
-           <!-- <div class="price-grid">
+  <!-- script file -->
+  <script src="index.js"></script>
+</body>
 
-            <div class="price-card">
-              <h5 class="price">90 <span>$</span></h5>
-              <p class="year">سنويا</p>
-            </div>
-
-            <div class="price-card">
-              <h5 class="price">90 <span>$</span></h5>
-              <p class="year">سنويا</p>
-            </div>
-           </div> -->
-
-        </div>
-      </section>
-      <!-- end features -->
-
-      <!-- start clients -->
-       <section id="clients">
-        <div class="container">
-
-        </div>
-       </section>
-      <!-- end customers -->
-    </main>
-    <!-- start fixed btn -->
-    <a id="fixed-btn" href="#">
-      <i class="fa-solid fa-angle-up"></i>
-    </a>
-    <!-- end fixed btn -->
-
-    <!-- script file -->
-    <script src="index.js"></script>
-  </body>
 </html>
