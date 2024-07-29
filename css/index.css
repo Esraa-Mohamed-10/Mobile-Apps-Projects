@@ -16,71 +16,56 @@
 /* Font Definitions */
 @font-face {
   font-family: "29LT Kaff";
-  src: url("fonts/alfont_com_29LT-Kaff.eot");  
+  src: url("fonts/alfont_com_29LT-Kaff.eot");
   src: url("fonts/alfont_com_29LT-Kaff.eot?#iefix") format("embedded-opentype"),
-      url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
-      url("fonts/alfont_com_29LT-Kaff.woff")
-      format("woff"),
-      url("fonts/alfont_com_29LT-Kaff.ttf")
-      format("truetype"),
-      url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff")
-      format("svg");  
+    url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
+    url("fonts/alfont_com_29LT-Kaff.woff") format("woff"),
+    url("fonts/alfont_com_29LT-Kaff.ttf") format("truetype"),
+    url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff") format("svg");
   font-weight: 400; /* Normal */
 }
 
 @font-face {
   font-family: "29LT Kaff";
-  src: url("fonts/alfont_com_29LT-Kaff.eot");  
+  src: url("fonts/alfont_com_29LT-Kaff.eot");
   src: url("fonts/alfont_com_29LT-Kaff.eot?#iefix") format("embedded-opentype"),
-      url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
-      url("fonts/alfont_com_29LT-Kaff.woff")
-      format("woff"),
-      url("fonts/alfont_com_29LT-Kaff.ttf")
-      format("truetype"),
-      url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff")
-      format("svg");  
+    url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
+    url("fonts/alfont_com_29LT-Kaff.woff") format("woff"),
+    url("fonts/alfont_com_29LT-Kaff.ttf") format("truetype"),
+    url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff") format("svg");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "29LT Kaff";
-  src: url("fonts/alfont_com_29LT-Kaff.eot");  
+  src: url("fonts/alfont_com_29LT-Kaff.eot");
   src: url("fonts/alfont_com_29LT-Kaff.eot?#iefix") format("embedded-opentype"),
-      url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
-      url("fonts/alfont_com_29LT-Kaff.woff")
-      format("woff"),
-      url("fonts/alfont_com_29LT-Kaff.ttf")
-      format("truetype"),
-      url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff")
-      format("svg");  
+    url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
+    url("fonts/alfont_com_29LT-Kaff.woff") format("woff"),
+    url("fonts/alfont_com_29LT-Kaff.ttf") format("truetype"),
+    url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff") format("svg");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "29LT Kaff";
-  src: url("fonts/alfont_com_29LT-Kaff.eot");  
+  src: url("fonts/alfont_com_29LT-Kaff.eot");
   src: url("fonts/alfont_com_29LT-Kaff.eot?#iefix") format("embedded-opentype"),
-      url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
-      url("fonts/alfont_com_29LT-Kaff.woff")
-      format("woff"),
-      url("fonts/alfont_com_29LT-Kaff.ttf")
-      format("truetype"),
-      url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff")
-      format("svg");  
+    url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
+    url("fonts/alfont_com_29LT-Kaff.woff") format("woff"),
+    url("fonts/alfont_com_29LT-Kaff.ttf") format("truetype"),
+    url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff") format("svg");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "29LT Kaff";
-  src: url("fonts/alfont_com_29LT-Kaff.eot");  
+  src: url("fonts/alfont_com_29LT-Kaff.eot");
   src: url("fonts/alfont_com_29LT-Kaff.eot?#iefix") format("embedded-opentype"),
-      url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
-      url("fonts/alfont_com_29LT-Kaff.woff")
-      format("woff"),
-      url("fonts/alfont_com_29LT-Kaff.ttf")
-      format("truetype"),
-      url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff")
-      format("svg");  
+    url("fonts/alfont_com_29LT-Kaff.woff2") format("woff2"),
+    url("fonts/alfont_com_29LT-Kaff.woff") format("woff"),
+    url("fonts/alfont_com_29LT-Kaff.ttf") format("truetype"),
+    url("fonts/alfont_com_29LT-Kaff.svg#29LT_Kaff") format("svg");
   font-weight: 900;
 }
 /* end font definition */
@@ -366,7 +351,7 @@ header .header-content {
   margin-top: 1rem;
 }
 
-.header-content a{
+.header-content a {
   text-decoration: none;
 }
 
@@ -491,8 +476,8 @@ header .header-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
   gap: 40px;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-card {
@@ -552,7 +537,6 @@ justify-content: center;
   .gallery-img img {
     margin-bottom: 5px;
   }
-
 }
 
 /* .gallery-img img:hover .img-overlay{
@@ -638,14 +622,15 @@ form {
 }
 
 .form-nm-mail input {
-width: 48%;
-height: 6vh;
-border-radius: 5px;
-border: 1px solid grey;
-outline: none;
+  width: 48%;
+  height: 6vh;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
 }
 
-input::placeholder , textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   font-size: 18px;
   padding: 10px;
 }
@@ -673,12 +658,12 @@ textarea {
   transition: box-shadow 0.3s ease;
 }
 
-
 .form-icons i {
   color: var(--nav-color);
 }
 
-.form-txt h4,.form-txt h5{
+.form-txt h4,
+.form-txt h5 {
   color: var(--nav-color);
   font-size: 22px;
 }
@@ -691,7 +676,7 @@ textarea {
 
 .form-social {
   margin: 1.5rem 0;
-font-size: 18px;
+  font-size: 18px;
 }
 
 .form-social i {
@@ -751,7 +736,6 @@ font-size: 18px;
 
   .personal-data {
     width: 100%;
-    /* text-align: center; */
     margin-top: 1.5rem;
   }
 
@@ -813,10 +797,6 @@ font-size: 18px;
   .header-content p {
     font-size: 1.2rem;
   }
-  /* .about-grid {
-    text-align: center; 
-    display: block;
-  } */
 }
 
 @media (min-width: 514px) {
@@ -882,7 +862,7 @@ font-size: 18px;
   }
 
   .form-btn {
-margin-right: 15rem;
+    margin-right: 15rem;
   }
 }
 
