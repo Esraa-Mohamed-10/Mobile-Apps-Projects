@@ -53,3 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(progressSection);
   });
+
+ 
+function SendMail(){
+  let parms = {
+    name:document.getElementById('name').value,
+    email:document.getElementById('email').value,
+    message:document.getElementById('msg').value
+  }
+
+  emailjs.send('service_asg5xkd','template_8riijaf',parms).then(alert('تم ارسال استفسارك سنتواصل بك قريبا'))
+}

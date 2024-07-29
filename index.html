@@ -15,6 +15,17 @@
   <!--the Intersection Observer Polyfill -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.12.0/intersection-observer.min.js"></script>
+
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "uCbVxQUV-d7Mg-hll",
+      });
+    })();
+  </script>
 </head>
 
 <body>
@@ -97,7 +108,7 @@
           <p>مرحبا</p>
           <h1>تطبيقاتي</h1>
           <p>ما تقدمه الشركة</p>
-          <button>تواصل معنا</button>
+          <a href="#contact"> <button> تواصل معنا</button> </a>
         </div>
       </div>
     </header>
@@ -218,16 +229,16 @@
             <!-- start pricing -->
             <div class="price-grid">
 
-            <div class="price-card">
-              <h5 class="price">9 <span>$</span></h5>
-              <p class="year">شهريا</p>
-            </div>
+              <div class="price-card">
+                <h5 class="price"> 9$ شهريا</h5>
 
-            <div class="price-card">
-              <h5 class="price">90 <span>$</span></h5>
-              <p class="year">سنويا</p>
+              </div>
+
+              <div class="price-card">
+                <h5 class="price">90$ سنويا</h5>
+
+              </div>
             </div>
-           </div>
 
           </div>
         </section>
@@ -275,14 +286,16 @@
             <div class="test-parent">
               <!-- 1 -->
               <div class="test-card">
-                
-                  <div class="client-logo">
-                    <img src="imgs/438145760_859696172869004_3805295181285288631_n.jpg" alt="" />
-                  </div>
-                  <p>شركة طريق الافق</p>
-               
+
+                <div class="client-logo">
+                  <img src="imgs/438145760_859696172869004_3805295181285288631_n.jpg" alt="" />
+                </div>
+                <p>شركة طريق الافق</p>
+
                 <div class="desc_rates">
-                  <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -291,14 +304,18 @@
 
               <!-- 2 -->
               <div class="test-card">
-                
-                  <div class="client-logo">
-                    <img src="imgs/client2.jpg" alt="" />
-                  </div>
-                  <p>لوكس بيوتي للتجميل </p>
-                
+
+                <div class="client-logo">
+                  <img src="imgs/client2.jpg" alt="" />
+                </div>
+                <p>لوكس بيوتي للتجميل </p>
+
                 <div class="desc_rates">
-                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <div class="rates">
+                    <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -307,14 +324,18 @@
 
               <!-- 3 -->
               <div class="test-card">
-                
-                  <div class="client-logo">
-                    <img src="imgs/client3.jpg" alt="" />
-                  </div>
-                  <p>قرطاسية الحسام</p>
-               
+
+                <div class="client-logo">
+                  <img src="imgs/client3.jpg" alt="" />
+                </div>
+                <p>قرطاسية الحسام</p>
+
                 <div class="desc_rates">
-                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <div class="rates">
+                    <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -323,14 +344,18 @@
 
               <!-- 4 -->
               <div class="test-card">
-                
-                  <div class="client-logo">
-                    <img src="imgs/client4.jpg" alt="" />
-                  </div>
-                  <p>عيادة الضاحية للتجميل والليزر</p>
-                
+
+                <div class="client-logo">
+                  <img src="imgs/client4.jpg" alt="" />
+                </div>
+                <p>عيادة الضاحية للتجميل والليزر</p>
+
                 <div class="desc_rates">
-                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <div class="rates">
+                    <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -339,14 +364,18 @@
 
               <!-- 5 -->
               <div class="test-card">
-                
-                  <div class="client-logo">
-                    <img src="imgs/client55.jpg" alt="" />
-                  </div>
-                  <p>عالية للمؤكولات الشامية</p>
-                
+
+                <div class="client-logo">
+                  <img src="imgs/client55.jpg" alt="" />
+                </div>
+                <p>عالية للمؤكولات الشامية</p>
+
                 <div class="desc_rates">
-                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <div class="rates">
+                    <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -355,14 +384,18 @@
 
               <!-- 6 -->
               <div class="test-card">
-              
-                  <div class="client-logo">
-                    <img src="imgs/client6.jpg" alt="" />
-                  </div>
-                  <p>الشروق للدعاية والاعلان </p>
-              
+
+                <div class="client-logo">
+                  <img src="imgs/client6.jpg" alt="" />
+                </div>
+                <p>الشروق للدعاية والاعلان </p>
+
                 <div class="desc_rates">
-                  <div class="rates"> <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                  <div class="rates">
+                    <div class="rates"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
                   <p class="desc">
                     من افضل الشركات التي تعاملت معها الله يعطيهم العافية انصح بهم
                   </p>
@@ -370,18 +403,63 @@
               </div>
 
             </div>
-            </section>
-            <!-- end clients -->
+        </section>
+        <!-- end clients -->
 
-            <!-- start contact -->
-            <!-- <form action="">
-        <input type="text" placeholder="name" id="username">
-        <input type="email" placeholder="email" id="useremail">
-        <input type="tel" placeholder="phone" id="userphone">
-        <textarea name="" id="usermsg"></textarea>
-        <button type="submit">send</button>
-       </form> -->
-            <!-- end contact -->
+        <!-- start contact -->
+        <section>
+          <div class="container">
+            <!-- start about component -->
+            <div>
+              <div class="special-heading">تواصل</div>
+              <p> تواصل معنا </p>
+            </div>
+            <!-- end about component -->
+
+            <div class="form-div">
+
+              <div class="form-txt">
+                <h4>عنوان</h4>
+                <p class="address">22 الدور الرابع قسيمة رقم ,
+                  145 طريق مورفي كانيون
+                  2028 سان دييغو كاليفورنيا</p>
+                <div class="form-social">
+                  <p><i class="fa-brands fa-whatsapp"></i> 7708111466 </p>
+                  <p><i class="fa-solid fa-phone"></i> 7708111466 </p>
+                  <p> <i class="fa-regular fa-envelope"></i> info@qriq.me</p>
+                </div>
+                <h5>اتبعني</h5>
+
+                <div class="nav-social nav-social-lg form-icons">
+                  <a href="mailto:info@qriq.me" target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                  <a href="https://wa.me/+9647708111466" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="tel:+9647708111466" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                </div>
+
+
+              </div>
+              <form action="">
+                <div class="form-nm-mail">
+
+                  <input type="text" placeholder="اسم" id="name">
+                  <input type="email" id="email" placeholder="بريد الكتروني">
+                </div>
+                <div class="text-area">
+
+                  <textarea name="" id="msg" placeholder="اخبرنا المزيد عن احتياجاتك...." cols="68" rows="10"></textarea>
+                </div>
+                <button type="submit" class="form-btn" onclick="SendMail()">ارسل رسالة</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- end contact -->
   </main>
   <!-- start fixed btn -->
   <a id="fixed-btn" href="#">
