@@ -58,5 +58,5 @@ function SendMail() {
 
   emailjs
     .send("service_c38tg0s", "template_c4occxb", parms)
-    .then(alert("تم ارسال استفسارك سنتواصل بك قريبا"));
+    // .then(alert("تم ارسال استفسارك سنتواصل بك قريبا"));
 }
