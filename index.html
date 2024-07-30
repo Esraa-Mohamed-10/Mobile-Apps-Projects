@@ -36,7 +36,7 @@
   <script type="text/javascript">
     (function () {
       emailjs.init({
-        publicKey: "uCbVxQUV-d7Mg-hll",
+        publicKey: "Kf46iGPQJ_1g66U4B",
       });
     })();
   </script>
@@ -122,7 +122,10 @@
       <div class="overlay">
         <div class="header-content">
           <p>مرحبا</p>
-          <h1>تطبيقاتي</h1>
+          <div class="typewriter">
+        <h1 id="typewriter-text"></h1>
+    </div>
+          
           <p>ما تقدمه الشركة</p>
           <a href="#contact"> <button> تواصل معنا</button> </a>
         </div>
@@ -275,7 +278,7 @@
             <div class="gallery-grid d-grid gap-3 mt-5">
               <div class="row">
               <div class="gallery-img gallery-col col-lg-4 col-md-6 mt-md-5">
-                <div >
+                <div class="">
                   <button
                   type="button"
                   class="btn"
@@ -315,14 +318,14 @@
                     <div class="modal-body">
                       <div class="d-grid gap-5">
                         <div class="row">
-                          <div class="col-6">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
                             <img
                               src="imgs/project-1.jpg"
                               alt=""
                               class="img-fluid"
                             />
                           </div>
-                          <div class="col-6 px-5">
+                          <div class="col-lg-6 col-md-6 px-lg-5 px-md-5 px-sm-1 col-sm-12">
                             <h4 class="fs-5">عنوان المشروع</h4>
                             <p class="lh-lg">
                               هذا النص هو مثال لنص يمكن أن يستبدل في نفس
@@ -421,14 +424,14 @@
                 <div class="modal-body">
                   <div class="d-grid gap-5">
                     <div class="row">
-                      <div class="col-6">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <img
                           src="imgs/project-3.jpg"
                           alt=""
                           class="img-fluid"
                         />
                       </div>
-                      <div class="col-6 ">
+                      <div class="col-lg-6 col-md-6 px-lg-5 px-md-5 px-sm-1 col-sm-12">
                         <h4 class="fs-5">عنوان المشروع</h4>
                         <p class="lh-lg">
                           هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -529,14 +532,14 @@
                   <div class="modal-body">
                     <div class="d-grid lg-gap-5">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                           <img
                             src="imgs/project-2.jpg"
                             alt=""
                             class="img-fluid"
                           />
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 px-lg-5 px-md-5 px-sm-1 col-sm-12">
                           <h4 class="fs-5">عنوان المشروع</h4>
                           <p class="lh-lg">
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -639,14 +642,14 @@
                               <div class="modal-body">
                                 <div class="d-grid gap-5">
                                   <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                       <img
                                         src="imgs/project-3.jpg"
                                         alt=""
                                         class="img-fluid"
                                       />
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-lg-6 col-md-6 px-lg-5 px-md-5 px-sm-1 col-sm-12">
                                       <h4 class="fs-5">عنوان المشروع</h4>
                                       <p class="lh-lg">
                                         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -748,14 +751,14 @@
                   <div class="modal-body">
                     <div class="d-grid gap-5">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                           <img
                             src="imgs/project-1.jpg"
                             alt=""
                             class="img-fluid"
                           />
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-lg-6 col-md-6 px-lg-5 px-md-5 px-sm-1 col-sm-12">
                           <h4 class="fs-5">عنوان المشروع</h4>
                           <p class="lh-lg">
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -981,7 +984,7 @@
 
 
               </div>
-              <form action="" id="contact" class="w-100">
+              <form action="contact" id="contact" class="w-100">
                 <div class="form-nm-mail d-flex flex-md-row flex-lg-row flex-column justify-content-between">
 
                   <input type="text" placeholder="اسم" id="name" required class="ms-3">
@@ -993,7 +996,7 @@
                 </div>
                 <div class="btn-div d-flex justify-content-center m-auto">
 
-                  <button type="submit" class="form-btn py-2 px-4" onclick="SendMail()">ارسل رسالة</button>
+                  <button type="submit" class="form-btn py-2 px-4">ارسل رسالة</button>
                 </div>
               </form>
             </div>
