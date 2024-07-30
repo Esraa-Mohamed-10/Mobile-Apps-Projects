@@ -18,6 +18,14 @@
   <!-- font icon files -->
   <link rel="stylesheet" href="css/all.min.css" />
 
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="files/bootstrap.min.css" />
+
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <!--the Intersection Observer Polyfill -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.12.0/intersection-observer.min.js"></script>
@@ -68,7 +76,7 @@
 
     <!-- nav on medium and small screens -->
     <div class="responsive-nav">
-      <div class="container">
+      <div class="mycontainer">
         <h3 class="nav-title">تطبيقاتي</h3>
         <!-- div contains btn and social -->
         <div class="btn_social_container">
@@ -125,38 +133,41 @@
 
     <!-- start about -->
     <section id="about">
-      <div class="container">
+      <div class="mycontainer">
         <!-- start about component -->
         <div>
           <div class="special-heading">عني</div>
           <p>تعرف علي أكثر</p>
         </div>
         <!-- end about component -->
-        <div class="about-grid">
-          <div class="about-intro">
-            <h2>
-              انا <span class="about-name">سيمون اوليفيا</span> مطور ويب
-            </h2>
-            <p>
-              أساعدك في بناء علامة تجارية لعملك بسعر مناسب. حقق الآلاف من
-              العملاء نتائج استثنائية أثناء العمل مع فريقنا المتفاني. عندما
-              أخذت طابعة غير معروفة لوحًا من النوع وتدافعت عليه لعمل كتاب عينة
-              من النوع
-            </p>
-            <p>
-              تسليم العمل في الوقت المحدد والميزانية التي تلبي متطلبات العميل
-              هو شعارنا. كان النص الوهمي القياسي في الصناعة على الإطلاق عندما
-              أخذت طابعة غير معروفة لوحًا
-            </p>
-          </div>
+        <div class="about-grid  d-grid">
+          <div class="row">
 
-          <div class="progress-section">
-            <div class="progress-container">
-
-              <div class="progress-bar" data-progress="90">JS , Dart</div>
-              <div class="progress-bar" data-progress="80">Flutter</div>
-              <div class="progress-bar" data-progress="85">React Native</div>
-              <div class="progress-bar" data-progress="95">UI UX</div>
+            <div class="about-intro text-md-center text-sm-center text-lg-end col-lg-6">
+              <h2>
+                انا <span class="about-name">سيمون اوليفيا</span> مطور ويب
+              </h2>
+              <p>
+                أساعدك في بناء علامة تجارية لعملك بسعر مناسب. حقق الآلاف من
+                العملاء نتائج استثنائية أثناء العمل مع فريقنا المتفاني. عندما
+                أخذت طابعة غير معروفة لوحًا من النوع وتدافعت عليه لعمل كتاب عينة
+                من النوع
+              </p>
+              <p>
+                تسليم العمل في الوقت المحدد والميزانية التي تلبي متطلبات العميل
+                هو شعارنا. كان النص الوهمي القياسي في الصناعة على الإطلاق عندما
+                أخذت طابعة غير معروفة لوحًا
+              </p>
+            </div>
+  
+            <div class="progress-section col-lg-6 mt-4 justify-content-center align-content-center">
+              <div class="progress-container">
+  
+                <div class="progress-bar" data-progress="90">JS , Dart</div>
+                <div class="progress-bar" data-progress="80">Flutter</div>
+                <div class="progress-bar" data-progress="85">React Native</div>
+                <div class="progress-bar" data-progress="95">UI UX</div>
+              </div>
             </div>
           </div>
         </div>
@@ -166,7 +177,7 @@
 
         <!-- start features -->
         <section id="features">
-          <div class="container">
+          <div class="mycontainer">
             <!-- start features component -->
             <div>
               <div class="special-heading">الميزات</div>
@@ -254,26 +265,559 @@
 
         <!-- start gallery -->
         <section id="gallery">
-          <div class="container">
+          <div class="mycontainer">
             <!-- start gallery component -->
             <div>
               <div class="special-heading">اعمالي</div>
               <p>واجهات تطبيقاتي</p>
             </div>
             <!-- end gallery component -->
-            <div class="gallery-grid">
-              <div class="gallery-img gallery-col">
-                <div>
-                  <img src="./imgs/project-1.jpg" alt="">
-                  <div class="img-overlay">Project1</div>
-                </div>
-                <img src="./imgs/project-3.jpg" alt="">
-              </div>
-              <div class="gallery-img gallery-middle"><img src="./imgs/project-2.jpg" alt=""></div>
+            <div class="gallery-grid d-grid gap-3 mt-5">
+              <div class="row">
+              <div class="gallery-img gallery-col col-lg-4 col-md-6 mt-md-5">
+                <div class="position-relative top-50 left-50 opacity-0">
+                  <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  style="all: unset;">
+                  <img src="./imgs/project-1.jpg" alt="" />
+                </button>
+                <div class="position-absolute">project-1</div>
 
-              <div class="gallery-img  gallery-col-below">
-                <img src="./imgs/project-1.jpg" alt="">
-                <img src="./imgs/project-3.jpg" alt="">
+                <!-- Modal -->
+              <div
+                class="modal fade w-100"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h1
+                        class="modal-title fs-5 m-auto"
+                        id="staticBackdropLabel"
+                      >
+                        عنوان المشروع
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close m-0"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-grid gap-5">
+                        <div class="row">
+                          <div class="col-6">
+                            <img
+                              src="imgs/project-1.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                          <div class="col-6 px-5">
+                            <h4 class="fs-5">عنوان المشروع</h4>
+                            <p class="lh-lg">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                              المساحة، لقد تم توليد هذا النص من مولد النص
+                              العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                              من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+                              يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من
+                              الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                              كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية،
+                              مولد النص العربى مفيد لمصممي المواقع على وجه
+                              الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                              يطلع على صورة حقيقية لتصميم الموقع.
+                            </p>
+
+                            <h4 class="fs-5 my-3">2عنوان المشروع</h4>
+                            <p class="border-bottom pb-1">
+                              هذا النص يمكن أن يتم تركيبه على أي تصميم
+                            </p>
+                            <p class="border-bottom pb-1">
+                              هذا النص يمكن أن يتم تركيبه على أي تصميم
+                            </p>
+                            <p class="border-bottom pb-1">
+                              هذا النص يمكن أن يتم تركيبه على أي تصميم
+                            </p>
+                            <p class="border-bottom pb-1">
+                              هذا النص يمكن أن يتم تركيبه على أي تصميم
+                            </p>
+
+                            <div class="m-auto modal-social">
+                              <a
+                                href="mailto:info@qriq.me"
+                                target="_blank"
+                                class="fs-5 mx-2"
+                              >
+                                <i class="fa-regular fa-envelope"></i>
+                              </a>
+                              <a
+                                href="https://wa.me/+9647708111466"
+                                target="_blank"
+                                class="fs-5 mx-2"
+                              >
+                                <i class="fa-brands fa-whatsapp"></i>
+                              </a>
+                              <a
+                                href="tel:+9647708111466"
+                                target="_blank"
+                                class="fs-5 mx-2"
+                              >
+                                <i class="fa-solid fa-phone"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                
+                </div>
+                   <!-- second img right -->
+        <div>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#img2"
+            style="all: unset"
+          >
+            <img src="./imgs/project-3.jpg" alt="" />
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade w-100"
+            id="img2"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h1 class="modal-title fs-5 m-auto" id="staticBackdropLabel">
+                    عنوان المشروع
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close m-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-grid gap-5">
+                    <div class="row">
+                      <div class="col-6">
+                        <img
+                          src="imgs/project-3.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-6 ">
+                        <h4 class="fs-5">عنوان المشروع</h4>
+                        <p class="lh-lg">
+                          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                          لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                          أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة
+                          إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت
+                          تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                          زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا
+                          يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع
+                          على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                          يطلع على صورة حقيقية لتصميم الموقع.
+                        </p>
+
+                        <h4 class="fs-5 my-3">2عنوان المشروع</h4>
+                        <p class="border-bottom pb-1">
+                          هذا النص يمكن أن يتم تركيبه على أي تصميم
+                        </p>
+                        <p class="border-bottom pb-1">
+                          هذا النص يمكن أن يتم تركيبه على أي تصميم
+                        </p>
+                        <p class="border-bottom pb-1">
+                          هذا النص يمكن أن يتم تركيبه على أي تصميم
+                        </p>
+                        <p class="border-bottom pb-1">
+                          هذا النص يمكن أن يتم تركيبه على أي تصميم
+                        </p>
+
+                        <div class="m-auto modal-social">
+                          <a
+                            href="mailto:info@qriq.me"
+                            target="_blank"
+                            class="fs-5 mx-2"
+                          >
+                            <i class="fa-regular fa-envelope"></i>
+                          </a>
+                          <a
+                            href="https://wa.me/+9647708111466"
+                            target="_blank"
+                            class="fs-5 mx-2"
+                          >
+                            <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                          <a
+                            href="tel:+9647708111466"
+                            target="_blank"
+                            class="fs-5 mx-2"
+                          >
+                            <i class="fa-solid fa-phone"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+                  <!-- 3rd img right -->
+        <div class="gallery-img gallery-middle col-lg-4 col-md-6">
+          <div>
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#img3"
+              style="all: unset"
+            >
+              <img src="./imgs/project-2.jpg" alt="" />
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade w-100"
+              id="img3"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h1
+                      class="modal-title fs-5 m-auto"
+                      id="staticBackdropLabel"
+                    >
+                      عنوان المشروع
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close m-0"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="d-grid lg-gap-5">
+                      <div class="row">
+                        <div class="col-6">
+                          <img
+                            src="imgs/project-2.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <h4 class="fs-5">عنوان المشروع</h4>
+                          <p class="lh-lg">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا
+                            كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                            العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                            مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                            لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                            كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                            الموقع.
+                          </p>
+
+                          <h4 class="fs-5 my-3">2عنوان المشروع</h4>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+
+                          <div class="m-auto modal-social">
+                            <a
+                              href="mailto:info@qriq.me"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a
+                              href="https://wa.me/+9647708111466"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a
+                              href="tel:+9647708111466"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-solid fa-phone"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <div class="gallery-img gallery-col gallery-col-below col-lg-4 col-md-12 mt-md-3">
+                    <!-- 4th image -->
+                    <div class="gallery-img">                      
+                        <button
+                          type="button"
+                          class="btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#img4"
+                          style="all: unset"
+                        >
+                          <img src="./imgs/project-3.jpg" alt="" />
+                        </button>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade w-100"
+                          id="img4"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header border-0">
+                                <h1
+                                  class="modal-title fs-5 m-auto"
+                                  id="staticBackdropLabel"
+                                >
+                                  عنوان المشروع
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close m-0"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="d-grid gap-5">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <img
+                                        src="imgs/project-3.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                      />
+                                    </div>
+                                    <div class="col-6 ">
+                                      <h4 class="fs-5">عنوان المشروع</h4>
+                                      <p class="lh-lg">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                        لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                        أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا
+                                        كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                                        العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                        مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                        لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                        كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                        الموقع.
+                                      </p>
+            
+                                      <h4 class="fs-5 my-3">2عنوان المشروع</h4>
+                                      <p class="border-bottom pb-1">
+                                        هذا النص يمكن أن يتم تركيبه على أي تصميم
+                                      </p>
+                                      <p class="border-bottom pb-1">
+                                        هذا النص يمكن أن يتم تركيبه على أي تصميم
+                                      </p>
+                                      <p class="border-bottom pb-1">
+                                        هذا النص يمكن أن يتم تركيبه على أي تصميم
+                                      </p>
+                                      <p class="border-bottom pb-1">
+                                        هذا النص يمكن أن يتم تركيبه على أي تصميم
+                                      </p>
+            
+                                      <div class="m-auto modal-social">
+                                        <a
+                                          href="mailto:info@qriq.me"
+                                          target="_blank"
+                                          class="fs-5 mx-2"
+                                        >
+                                          <i class="fa-regular fa-envelope"></i>
+                                        </a>
+                                        <a
+                                          href="https://wa.me/+9647708111466"
+                                          target="_blank"
+                                          class="fs-5 mx-2"
+                                        >
+                                          <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                        <a
+                                          href="tel:+9647708111466"
+                                          target="_blank"
+                                          class="fs-5 mx-2"
+                                        >
+                                          <i class="fa-solid fa-phone"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+
+                   <!-- 5th image -->
+        <div class="gallery-img ">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#img5"
+              style="all: unset"
+            >
+              <img src="./imgs/project-1.jpg" alt="" />
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade w-100"
+              id="img5"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h1
+                      class="modal-title fs-5 m-auto"
+                      id="staticBackdropLabel"
+                    >
+                      عنوان المشروع
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close m-0"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="d-grid gap-5">
+                      <div class="row">
+                        <div class="col-6">
+                          <img
+                            src="imgs/project-1.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-6 ">
+                          <h4 class="fs-5">عنوان المشروع</h4>
+                          <p class="lh-lg">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا
+                            كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                            العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                            مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                            لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                            كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                            الموقع.
+                          </p>
+
+                          <h4 class="fs-5 my-3">2عنوان المشروع</h4>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+                          <p class="border-bottom pb-1">
+                            هذا النص يمكن أن يتم تركيبه على أي تصميم
+                          </p>
+
+                          <div class="m-auto modal-social">
+                            <a
+                              href="mailto:info@qriq.me"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a
+                              href="https://wa.me/+9647708111466"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a
+                              href="tel:+9647708111466"
+                              target="_blank"
+                              class="fs-5 mx-2"
+                            >
+                              <i class="fa-solid fa-phone"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>             
               </div>
             </div>
           </div>
@@ -283,7 +827,7 @@
 
         <!-- start clients -->
         <section id="clients">
-          <div class="container">
+          <div class="mycontainer">
             <!-- start testimonals component -->
             <div>
               <div class="special-heading">عملائنا</div>
@@ -415,8 +959,8 @@
         <!-- end clients -->
 
         <!-- start contact -->
-        <section>
-          <div class="container">
+        <section >
+          <div class="mycontainer">
             <!-- start about component -->
             <div>
               <div class="special-heading">تواصل</div>
@@ -424,9 +968,9 @@
             </div>
             <!-- end about component -->
 
-            <div class="form-div">
+            <div class="form-div d-flex gap-4 mt-4 flex-column-reverse flex-lg-row ">
 
-              <div class="form-txt">
+              <div class="form-txt  m-md-auto m-sm-auto text-center text-md-center text-sm-center text-lg-end">
                 <h4>عنوان</h4>
                 <p class="address">بغداد | زيونة | شارع الربيعي</p>
                 <div class="form-social">
@@ -437,19 +981,19 @@
 
 
               </div>
-              <form action="" id="contact">
-                <div class="form-nm-mail">
+              <form action="" id="contact" class="w-100">
+                <div class="form-nm-mail d-flex flex-md-row flex-lg-row flex-column justify-content-between">
 
-                  <input type="text" placeholder="اسم" id="name" required>
+                  <input type="text" placeholder="اسم" id="name" required class="ms-3">
                   <input type="email" id="email" placeholder="بريد الكتروني" required>
                 </div>
-                <div class="text-area">
+                <div class="text-area mt-3">
 
-                  <textarea name="" id="message" placeholder="اخبرنا المزيد عن احتياجاتك...." cols="68" rows="10" required></textarea>
+                  <textarea name="" id="message" placeholder="اخبرنا المزيد عن احتياجاتك...."  rows="5" required></textarea>
                 </div>
-                <div class="btn-div">
+                <div class="btn-div d-flex justify-content-center m-auto">
 
-                  <button type="submit" class="form-btn" onclick="SendMail()">ارسل رسالة</button>
+                  <button type="submit" class="form-btn py-2 px-4" onclick="SendMail()">ارسل رسالة</button>
                 </div>
               </form>
             </div>
@@ -465,6 +1009,9 @@
 
   <!-- script file -->
   <script src="index.js"></script>
+
+   <!-- bootstrap js -->
+   <script src="files/bootstrap.bundle.js"></script>
 </body>
 
 </html>
