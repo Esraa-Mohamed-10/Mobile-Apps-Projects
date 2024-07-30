@@ -62,7 +62,7 @@ input{
 /* start component */
 .special-heading {
   color: #dee1e0;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
   letter-spacing: -3px;
   margin-top: 3rem;
@@ -263,12 +263,13 @@ input{
 }
 
 #drop-menu {
-  background-color: #1f2b32e6;
+  background-color: #1f2b32f8;
   padding: 1rem 2rem;
   display: none;
   position: fixed;
   top: 10vh;
   width: 100%;
+  z-index: 100;
 }
 /* end navbar */
 
