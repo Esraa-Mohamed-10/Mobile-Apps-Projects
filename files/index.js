@@ -25,6 +25,17 @@ close_menu.addEventListener("click", function () {
   drop_menu.style.display = "none";
 });
 
+
+// Load Intersection Observer library
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.12.0/intersection-observer.min.js';
+  script.onload = function() {
+      console.log('Intersection Observer library loaded.');
+  };
+  document.head.appendChild(script);
+})();
+
 // progress bar animation
 document.addEventListener("DOMContentLoaded", () => {
   const progressSection = document.querySelector(".progress-section");
@@ -49,22 +60,22 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(progressSection);
 });
 
-// function SendMail() {
-//   let parms = {
-//     name: document.getElementById("name").value,
-//     email: document.getElementById("email").value,
-//     message: document.getElementById("message").value,
-//   };
+// emailjs code
 
-//   emailjs
-//     .send("service_c38tg0s", "template_c4occxb", parms)
-//     // .then(alert("تم ارسال استفسارك سنتواصل بك قريبا"));
-// }
-
+// Load the EmailJS script
+var script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+script.type = 'text/javascript';
+script.onload = function () {
+    emailjs.init({
+        publicKey: 'Kf46iGPQJ_1g66U4B',
+    });
+};
+document.head.appendChild(script);
 
 document.getElementById("contact").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the form from submitting traditionally
-  SendMail(); // Call your SendMail function
+  event.preventDefault(); 
+  SendMail(); 
 });
 
 function SendMail() {
