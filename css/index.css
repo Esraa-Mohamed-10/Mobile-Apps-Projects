@@ -385,7 +385,6 @@ header .header-content {
 
 .progress-bar::before {
   content: "";
-  /* content: attr(data-progress) "%"; */
   position: absolute;
   right: 10px;
   color: white;
