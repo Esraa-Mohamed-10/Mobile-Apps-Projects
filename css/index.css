@@ -121,7 +121,7 @@ input {
 }
 
 .nav-title-lg {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .nav-links-container-lg {
@@ -279,6 +279,8 @@ header .overlay {
 header .header-content {
   padding: 50px 20px;
   margin: auto;
+
+  position: relative;
 }
 
 .header-content p {
@@ -288,6 +290,7 @@ header .header-content {
 
 .typewriter {
   direction: rtl;
+  position: relative;
 }
 .typewriter h1 {
   border-left: 0.12em solid rgb(241, 241, 240);
@@ -296,6 +299,7 @@ header .header-content {
   animation: blink-caret 0.75s step-end infinite;
   min-height: 1.2em;
   font-size: 3rem;
+  box-sizing: border-box;
 }
 
 @keyframes blink-caret {
@@ -308,19 +312,20 @@ header .header-content {
   }
 }
 
-
 .header-content a {
-  text-decoration: none;
-  color: var(--main-color);
+  all: unset;
   border: 3px solid var(--main-color);
   border-radius: 50px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 3.2rem;
   font-weight: 600;
   font-size: 1.1rem;
   margin-top: 2rem;
-  z-index: 100;
   display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  
 }
+
 
 .header-content a:hover {
   background-color: var(--main-color);
@@ -400,7 +405,7 @@ header .header-content {
   text-align: center;
   margin-bottom: 1rem;
   border-radius: 5px;
-  padding:15px;
+  padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: white;
 }
@@ -749,25 +754,6 @@ textarea {
     grid-template-columns: repeat(2, auto);
     row-gap: 1.4rem;
   }
-  /* .header-content h1 {
-    font-size: 3rem;
-    width: 208px;
-    padding-left: 8px;
-    border-left: 2px solid var(--white-opacity);
-    overflow: hidden;
-    white-space: nowrap;
-    animation: control-width 2s steps(8) 0.5s both infinite;
-    text-align: right;
-  } */
-
-  /* @keyframes control-width {
-    from {
-      width: 0;
-    }
-    to {
-      width: 208px;
-    }
-  } */
 
   .header-content p {
     font-size: 1rem;
@@ -798,15 +784,6 @@ textarea {
 
   .btn_social_container {
     width: 30% !important;
-  }
-
-  @keyframes control-width {
-    from {
-      width: 0;
-    }
-    to {
-      width: 230px;
-    }
   }
 
   .header-content p {
